@@ -1,0 +1,447 @@
+[
+  {
+    "slideIndex": 1,
+    "id": "slide-01",
+    "title": "FILMMAKER \u2014 Hero",
+    "image": "/images/slides/slide-01.webp",
+    "hotspots": [
+      {
+        "uri": "https://drive.google.com/file/d/1Q7Y_Atg43ByXhCgvnT6V35ugfsTZuIbt/view?usp=drive_link",
+        "left": 5.19,
+        "top": 16.87,
+        "width": 61.54,
+        "height": 61.54
+      }
+    ]
+  },
+  {
+    "slideIndex": 2,
+    "id": "slide-02",
+    "title": "EBRAHEM MOHAMED \u2014 Career & Education",
+    "image": "/images/slides/slide-02.webp",
+    "hotspots": [
+      {
+        "uri": "https://wa.link/2696vh",
+        "left": 61.25,
+        "top": 88.42,
+        "width": 10.65,
+        "height": 2.88
+      }
+    ]
+  },
+  {
+    "slideIndex": 3,
+    "id": "slide-03",
+    "title": "SHORT FILMS \u2014 Chapter 01",
+    "image": "/images/slides/slide-03.webp",
+    "hotspots": [
+      {
+        "uri": "https://drive.google.com/file/d/12RL6XWfeqc6FtPhM2f-O6x_M4nGBH-k_/view?usp=drive_link",
+        "left": 5.28,
+        "top": 16.8,
+        "width": 55.88,
+        "height": 55.88
+      }
+    ]
+  },
+  {
+    "slideIndex": 4,
+    "id": "slide-04",
+    "title": "Redemption \u2014 Short Film \u00b7 2023",
+    "image": "/images/slides/slide-04.webp",
+    "hotspots": [
+      {
+        "uri": "https://drive.google.com/file/d/1Q7Y_Atg43ByXhCgvnT6V35ugfsTZuIbt/view?usp=drive_link",
+        "left": 34.38,
+        "top": 44.47,
+        "width": 3.16,
+        "height": 6.34
+      },
+      {
+        "uri": "https://drive.google.com/file/d/1yR1BdYGJQ81wjC-QmWUCyKqvvvxm1Qgk/view?usp=drive_link",
+        "left": 5.29,
+        "top": 16.8,
+        "width": 55.91,
+        "height": 55.91
+      }
+    ]
+  },
+  {
+    "slideIndex": 5,
+    "id": "slide-05",
+    "title": "White Lie (\u0643\u0630\u0628\u0647 \u0628\u064a\u0636\u0627\u0621) \u2014 Short Film \u00b7 2022",
+    "image": "/images/slides/slide-05.webp",
+    "hotspots": [
+      {
+        "uri": "https://drive.google.com/file/d/12RL6XWfeqc6FtPhM2f-O6x_M4nGBH-k_/view?usp=drive_link",
+        "left": 32.07,
+        "top": 41.6,
+        "width": 3.16,
+        "height": 6.34
+      },
+      {
+        "uri": "https://vimeo.com/1235152721?share=copy&fl=sv&fe=ci",
+        "left": -0.48,
+        "top": -0.48,
+        "width": 100.96,
+        "height": 100.96
+      }
+    ]
+  },
+  {
+    "slideIndex": 6,
+    "id": "slide-06",
+    "title": "Black Veil (\u062d\u062c\u0627\u0628 \u0623\u0633\u0648\u062f) \u2014 Short Film \u00b7 2022",
+    "image": "/images/slides/slide-06.webp",
+    "hotspots": [
+      {
+        "uri": "https://drive.google.com/file/d/1yR1BdYGJQ81wjC-QmWUCyKqvvvxm1Qgk/view?usp=drive_link",
+        "left": 32.17,
+        "top": 41.6,
+        "width": 3.16,
+        "height": 6.34
+      }
+    ]
+  },
+  {
+    "slideIndex": 7,
+    "id": "slide-07",
+    "title": "Maf'oul Beh (\u0645\u0641\u0639\u0648\u0644 \u0628\u0647) \u2014 Short Film \u00b7 2026",
+    "image": "/images/slides/slide-07.webp",
+    "hotspots": []
+  },
+  {
+    "slideIndex": 8,
+    "id": "slide-08",
+    "title": "TTL CAMPAIGN \u2014 Chapter 02",
+    "image": "/images/slides/slide-08.webp",
+    "hotspots": [
+      {
+        "uri": "https://vimeo.com/1234679170?share=copy&fl=sv&fe=ci",
+        "left": 0.0,
+        "top": 0.0,
+        "width": 100.0,
+        "height": 100.0
+      }
+    ]
+  },
+  {
+    "slideIndex": 9,
+    "id": "slide-09",
+    "title": "Neop - TTL Campaign \u00b7 2026",
+    "image": "/images/slides/slide-09.webp",
+    "hotspots": [
+      {
+        "uri": "https://vimeo.com/1235152721?share=copy&fl=sv&fe=ci",
+        "left": 48.29,
+        "top": 46.83,
+        "width": 3.16,
+        "height": 6.34
+      },
+      {
+        "uri": "https://vimeo.com/1234680454?share=copy&fl=sv&fe=ci",
+        "left": 0.0,
+        "top": 0.0,
+        "width": 100.0,
+        "height": 100.0
+      }
+    ]
+  },
+  {
+    "slideIndex": 10,
+    "id": "slide-10",
+    "title": "Azrak - Internship Campaign \u00b7 2024",
+    "image": "/images/slides/slide-10.webp",
+    "hotspots": [
+      {
+        "uri": "https://vimeo.com/1234679170?share=copy&fl=sv&fe=ci",
+        "left": 48.29,
+        "top": 46.83,
+        "width": 3.16,
+        "height": 6.34
+      },
+      {
+        "uri": "https://vimeo.com/1235159889?share=copy&fl=sv&fe=ci",
+        "left": -0.01,
+        "top": 24.96,
+        "width": 75.04,
+        "height": 75.04
+      }
+    ]
+  },
+  {
+    "slideIndex": 11,
+    "id": "slide-11",
+    "title": "Azrak - Ramadan Campaign \u00b7 2024",
+    "image": "/images/slides/slide-11.webp",
+    "hotspots": [
+      {
+        "uri": "https://vimeo.com/1234680454?share=copy&fl=sv&fe=ci",
+        "left": 48.29,
+        "top": 46.83,
+        "width": 3.16,
+        "height": 6.34
+      }
+    ]
+  },
+  {
+    "slideIndex": 12,
+    "id": "slide-12",
+    "title": "DOCUMENTARY \u2014 Chapter 03",
+    "image": "/images/slides/slide-12.webp",
+    "hotspots": [
+      {
+        "uri": "https://vimeo.com/1235159889?share=copy&fl=sv&fe=ci",
+        "left": 0.0,
+        "top": 24.47,
+        "width": 75.04,
+        "height": 75.53
+      }
+    ]
+  },
+  {
+    "slideIndex": 13,
+    "id": "slide-13",
+    "title": "Neop \u00d7 Al Arabiya \u00b7 2025",
+    "image": "/images/slides/slide-13.webp",
+    "hotspots": [
+      {
+        "uri": "https://vimeo.com/1235159889?share=copy&fl=sv&fe=ci",
+        "left": -0.01,
+        "top": 24.96,
+        "width": 75.04,
+        "height": 75.04
+      },
+      {
+        "uri": "https://vimeo.com/1235159889?share=copy&fl=sv&fe=ci",
+        "left": 36.35,
+        "top": 59.85,
+        "width": 3.16,
+        "height": 6.34
+      },
+      {
+        "uri": "https://www.instagram.com/reel/DYE7p3pItTS/",
+        "left": 64.69,
+        "top": 15.07,
+        "width": 17.49,
+        "height": 55.27
+      }
+    ]
+  },
+  {
+    "slideIndex": 14,
+    "id": "slide-14",
+    "title": "Neop \u00d7 Ghalati \u00b7 2026",
+    "image": "/images/slides/slide-14.webp",
+    "hotspots": [
+      {
+        "uri": "https://drive.google.com/file/d/1jbg4wwTaC-jgtc4aoQHj27__7qFC-nEx/view?usp=drive_link",
+        "left": 0.0,
+        "top": 24.47,
+        "width": 75.04,
+        "height": 75.53
+      },
+      {
+        "uri": "https://drive.google.com/file/d/1jbg4wwTaC-jgtc4aoQHj27__7qFC-nEx/view?usp=drive_link",
+        "left": 36.35,
+        "top": 59.85,
+        "width": 3.16,
+        "height": 6.34
+      }
+    ]
+  },
+  {
+    "slideIndex": 15,
+    "id": "slide-15",
+    "title": "REEEELS \u2014 Chapter 04",
+    "image": "/images/slides/slide-15.webp",
+    "hotspots": [
+      {
+        "uri": "https://www.instagram.com/reel/DUN9aMiDTbA/",
+        "left": 41.26,
+        "top": 15.07,
+        "width": 17.48,
+        "height": 55.24
+      }
+    ]
+  },
+  {
+    "slideIndex": 16,
+    "id": "slide-16",
+    "title": "NORDWAY \u2014 Specialty Coffee Roastery",
+    "image": "/images/slides/slide-16.webp",
+    "hotspots": [
+      {
+        "uri": "https://www.instagram.com/reel/DcbRUxPCIOH/",
+        "left": 41.31,
+        "top": 15.14,
+        "width": 17.46,
+        "height": 55.17
+      },
+      {
+        "uri": "https://drive.google.com/file/d/1sWyMp1yEJCmRHt4f-v5SUs-8zmsOKo8m/view?usp=drive_link",
+        "left": 17.82,
+        "top": 15.14,
+        "width": 17.47,
+        "height": 55.22
+      },
+      {
+        "uri": "https://www.instagram.com/reel/DcbRUxPCIOH/",
+        "left": 48.91,
+        "top": 39.61,
+        "width": 3.16,
+        "height": 6.34
+      },
+      {
+        "uri": "https://www.instagram.com/reel/DYE7p3pItTS/",
+        "left": 72.29,
+        "top": 39.51,
+        "width": 3.16,
+        "height": 6.34
+      },
+      {
+        "uri": "https://drive.google.com/file/d/1sWyMp1yEJCmRHt4f-v5SUs-8zmsOKo8m/view?usp=drive_link",
+        "left": 25.42,
+        "top": 39.51,
+        "width": 3.16,
+        "height": 6.34
+      },
+      {
+        "uri": "https://vimeo.com/1235181446?share=copy&fl=sv&fe=ci",
+        "left": 41.22,
+        "top": 15.07,
+        "width": 17.55,
+        "height": 55.48
+      }
+    ]
+  },
+  {
+    "slideIndex": 17,
+    "id": "slide-17",
+    "title": "Koffie Art \u2014 Specialty Coffee Caf\u00e9",
+    "image": "/images/slides/slide-17.webp",
+    "hotspots": [
+      {
+        "uri": "https://www.instagram.com/reel/DYXOsG1jDJ4/",
+        "left": 17.88,
+        "top": 15.14,
+        "width": 17.47,
+        "height": 55.22
+      },
+      {
+        "uri": "https://www.instagram.com/reel/DblRaLpD6d5/",
+        "left": 64.7,
+        "top": 15.14,
+        "width": 17.47,
+        "height": 55.23
+      },
+      {
+        "uri": "https://www.instagram.com/reel/DUN9aMiDTbA/",
+        "left": 48.91,
+        "top": 39.61,
+        "width": 3.16,
+        "height": 6.34
+      },
+      {
+        "uri": "https://www.instagram.com/reel/DblRaLpD6d5/",
+        "left": 72.29,
+        "top": 39.51,
+        "width": 3.16,
+        "height": 6.34
+      },
+      {
+        "uri": "https://www.instagram.com/reel/DYXOsG1jDJ4/",
+        "left": 25.42,
+        "top": 39.51,
+        "width": 3.16,
+        "height": 6.34
+      },
+      {
+        "uri": "mailto:ebrahim.mohamed9710@gmail.com",
+        "left": 5.26,
+        "top": 64.1,
+        "width": 21.29,
+        "height": 1.95
+      }
+    ]
+  },
+  {
+    "slideIndex": 18,
+    "id": "slide-18",
+    "title": "NEOP \u2014 Creative Marketing Agency",
+    "image": "/images/slides/slide-18.webp",
+    "hotspots": [
+      {
+        "uri": "https://www.instagram.com/reel/DYz44_lo_f0/",
+        "left": 64.7,
+        "top": 15.07,
+        "width": 17.48,
+        "height": 55.24
+      },
+      {
+        "uri": "https://www.instagram.com/reel/DXmP1UciHEs/",
+        "left": 17.82,
+        "top": 15.07,
+        "width": 17.48,
+        "height": 55.24
+      },
+      {
+        "uri": "https://vimeo.com/1235181446?share=copy&fl=sv&fe=ci",
+        "left": 48.91,
+        "top": 39.61,
+        "width": 3.16,
+        "height": 6.34
+      },
+      {
+        "uri": "https://www.instagram.com/reel/DYz44_lo_f0/",
+        "left": 72.29,
+        "top": 39.51,
+        "width": 3.16,
+        "height": 6.34
+      },
+      {
+        "uri": "https://www.instagram.com/reel/DXmP1UciHEs/",
+        "left": 25.42,
+        "top": 39.51,
+        "width": 3.16,
+        "height": 6.34
+      }
+    ]
+  },
+  {
+    "slideIndex": 19,
+    "id": "slide-19",
+    "title": "DROP ME A LINE \u2014 Contact",
+    "image": "/images/slides/slide-19.webp",
+    "hotspots": [
+      {
+        "uri": "https://wa.link/2696vh",
+        "left": 5.26,
+        "top": 67.26,
+        "width": 12.64,
+        "height": 1.98
+      },
+      {
+        "uri": "https://www.instagram.com/ebra__u/",
+        "left": 16.55,
+        "top": 89.19,
+        "width": 4.57,
+        "height": 1.92
+      },
+      {
+        "uri": "www.linkedin.com/in/ebrahim-mohamed-16b313304",
+        "left": 29.58,
+        "top": 89.19,
+        "width": 3.62,
+        "height": 1.92
+      },
+      {
+        "uri": "https://vimeo.com/user218248330?fl=pp&fe=sh",
+        "left": 5.19,
+        "top": 89.19,
+        "width": 2.88,
+        "height": 1.92
+      }
+    ]
+  }
+]
