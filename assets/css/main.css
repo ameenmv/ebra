@@ -116,3 +116,13 @@ html.lenis, html.lenis body {
     cursor: none !important;
   }
 }
+
+/* Strictly hide custom cursor on Mobile (< 768px) */
+@media (max-width: 767px) {
+  .custom-cursor-container {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}

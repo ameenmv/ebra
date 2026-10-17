@@ -90,9 +90,14 @@
         class="project-visual absolute inset-0 w-full h-full object-cover object-center pointer-events-none will-change-transform"
       />
 
+      <!-- Dark Gradient Overlays matching PDF: Left text area, right description area, and subtle top bar -->
+      <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 via-35% to-transparent pointer-events-none z-10"></div>
+      <div class="absolute inset-0 bg-gradient-to-l from-black/85 via-black/50 via-30% to-transparent pointer-events-none z-10"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent via-20% to-transparent pointer-events-none z-10"></div>
+
       <!-- Play Button in the Center -->
       <div
-        class="absolute inset-0 cursor-pointer"
+        class="absolute inset-0 cursor-pointer z-10"
         @click="$emit('play-video', {
           title: 'Azrak - Internship Campaign · 2024',
           subtitle: 'Social Media Campaign',
@@ -143,7 +148,7 @@
       </div>
 
       <!-- Canvas Overlaid Info (Titles on left, Description on right) -->
-      <div class="project-info absolute inset-0 pointer-events-none text-ebra-yellow font-clash z-20">
+      <div class="project-info absolute inset-0 pointer-events-none text-ebra-yellow font-clash z-20 drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
         <!-- Titles Above Left Stills -->
         <h3
           class="font-medium leading-none absolute"

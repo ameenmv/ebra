@@ -73,7 +73,7 @@
           })"
           class="w-full py-3 px-4 rounded-xl bg-ebra-yellow text-black font-clash font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 active:scale-95 transition-transform"
         >
-          <span>Open in Google Drive</span>
+          <span>Watch Documentary</span>
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
           </svg>
@@ -118,12 +118,15 @@
           alt="Neop x Ghalati Main"
           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-103"
         />
+        <!-- Dark Overlay under Left Text (matches PDF: covers white lamp on left and white sleeve at bottom) -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 via-35% to-transparent pointer-events-none z-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none z-10"></div>
         <PlayButton />
       </div>
 
       <!-- Overlaid Text: Title & Subtitle (Top-Left of Hero) -->
       <div
-        class="project-info absolute text-ebra-yellow font-clash z-20 pointer-events-none"
+        class="project-info absolute text-ebra-yellow font-clash z-20 pointer-events-none drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]"
         style="left: 5.14%; top: 29.32%; width: 30%;"
       >
         <h3 class="font-medium leading-none" style="font-size: 1.56cqw;">
@@ -136,7 +139,7 @@
 
       <!-- Overlaid Text: Paragraph Description (Top-Center of Hero) -->
       <p
-        class="project-info absolute text-ebra-yellow font-clash font-light leading-relaxed z-20 pointer-events-none"
+        class="project-info absolute text-ebra-yellow font-clash font-light leading-relaxed z-20 pointer-events-none drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]"
         style="left: 38.26%; top: 28.95%; width: 34%; font-size: 1.32cqw;"
       >
         A documentary exploring Neop’s growing partnership with<br />
@@ -149,7 +152,7 @@
 
       <!-- Overlaid Text: Scope of Work (Bottom-Left of Hero) -->
       <div
-        class="project-info absolute text-ebra-yellow font-clash z-20 pointer-events-none"
+        class="project-info absolute text-ebra-yellow font-clash z-20 pointer-events-none drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]"
         style="left: 5.14%; top: 85.80%; width: 30%;"
       >
         <div class="font-medium leading-none" style="font-size: 1.32cqw;">

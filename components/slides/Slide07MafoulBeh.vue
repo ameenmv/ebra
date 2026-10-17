@@ -39,18 +39,6 @@
           <div>Editor & 1st AD: <span class="text-ebra-yellow font-bold">Ebra Mohamed</span></div>
           <div>Producer: <span class="text-white font-bold">Mohamed Hatem</span></div>
         </div>
-
-        <a
-          href="https://drive.google.com/file/d/1sM72Y4cE6w5j0oT1vO6z8kG2Qe3tF8g1/view?usp=drive_link"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="w-full py-3 px-4 rounded-xl bg-ebra-yellow text-black font-clash font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 active:scale-95 transition-transform"
-        >
-          <span>Open Project on Google Drive</span>
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-          </svg>
-        </a>
       </div>
     </div>
 

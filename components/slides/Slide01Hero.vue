@@ -32,28 +32,13 @@
         <h1 class="text-ebra-yellow font-clash font-bold text-5xl leading-none uppercase tracking-tight">
           FILMMAKER
         </h1>
-
-        <!-- Showreel Action Button -->
-        <div class="pt-2">
-          <button
-            type="button"
-            @click="$emit('play-showreel')"
-            class="w-full py-3.5 px-5 rounded-full bg-ebra-yellow text-black font-clash font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(251,237,53,0.3)] active:scale-95 transition-transform"
-          >
-            <span>Watch Showreel</span>
-            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z" />
-            </svg>
-          </button>
-        </div>
       </div>
     </div>
 
     <!-- 16:9 PDF Canvas Frame (Desktop md:) -->
     <div
-      class="hidden md:block relative w-full max-w-[1920px] 2xl:max-w-[2560px] aspect-[16/9] bg-black overflow-hidden select-none cursor-pointer group"
+      class="hidden md:block relative w-full max-w-[1920px] 2xl:max-w-[2560px] aspect-[16/9] bg-black overflow-hidden select-none"
       style="container-type: inline-size;"
-      @click="$emit('play-showreel')"
     >
       <!-- Raw Background Photo -->
       <img

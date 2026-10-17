@@ -81,24 +81,6 @@
           <span>Scope of Work:</span>
           <span class="font-bold text-ebra-yellow">Colorist · Video Editor</span>
         </div>
-
-        <button
-          type="button"
-          @click="$emit('play-video', {
-            title: 'Koffie Art — Selected Reels',
-            subtitle: 'Specialty Coffee & Café',
-            scopeOfWork: 'Colorist · Video Editor',
-            videoType: 'vimeo',
-            vimeoId: '1235160201',
-            videoUrl: 'https://vimeo.com/1235160201'
-          })"
-          class="w-full py-3 px-4 rounded-xl bg-ebra-yellow text-black font-clash font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 active:scale-95 transition-transform"
-        >
-          <span>Watch on Vimeo</span>
-          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-            <path d="M8 5v14l11-7z" />
-          </svg>
-        </button>
       </div>
     </div>
 

@@ -2,7 +2,7 @@
   <div
     v-if="isDesktop"
     ref="cursorRef"
-    class="custom-cursor-container fixed top-0 left-0 pointer-events-none z-[99999] select-none transition-opacity duration-200"
+    class="custom-cursor-container hidden md:block fixed top-0 left-0 pointer-events-none z-[99999] select-none transition-opacity duration-200"
     :class="[
       isVisible ? 'opacity-100' : 'opacity-0',
       isHovered ? 'cursor-hovered' : '',
@@ -111,14 +111,6 @@
         />
       </svg>
     </div>
-
-    <!-- Mini Hover Label Pill (WATCH / PLAY / EXPLORE) -->
-    <div
-      v-if="hoverLabel"
-      class="absolute left-full ml-3 top-1/2 -translate-y-1/2 px-2 py-0.5 rounded-full bg-black/90 border border-ebra-yellow/60 text-[10px] font-mono tracking-widest text-ebra-yellow font-bold uppercase whitespace-nowrap shadow-[0_0_15px_rgba(251,237,53,0.35)] backdrop-blur-md animate-pulse"
-    >
-      {{ hoverLabel }}
-    </div>
   </div>
 </template>
 
@@ -130,7 +122,6 @@ const isDesktop = ref(false)
 const isVisible = ref(false)
 const isHovered = ref(false)
 const isPressed = ref(false)
-const hoverLabel = ref<string | null>(null)
 
 // Eyes state
 const leftEyeClosed = ref(false)
@@ -253,7 +244,7 @@ const scheduleNextBlink = () => {
   }, nextDelay)
 }
 
-// Interactive element detection on hover
+// Interactive element detection on hover (pure scale & wink, NO text/pills)
 const handleMouseOver = (e: MouseEvent) => {
   const target = e.target as HTMLElement | null
   if (!target) return
@@ -266,21 +257,9 @@ const handleMouseOver = (e: MouseEvent) => {
     }
     isHovered.value = true
     scale.value = isPressed.value ? 0.84 : 1.35
-
-    const text = interactive.textContent?.toLowerCase() || ''
-    if (interactive.closest('#slide-01') || text.includes('showreel') || text.includes('reel') || text.includes('watch') || interactive.classList.contains('reel-card')) {
-      hoverLabel.value = 'WATCH'
-    } else if (text.includes('drive') || text.includes('open') || text.includes('link')) {
-      hoverLabel.value = 'OPEN'
-    } else if (interactive.tagName === 'A' || interactive.getAttribute('role') === 'button') {
-      hoverLabel.value = null
-    } else {
-      hoverLabel.value = null
-    }
   } else {
     isHovered.value = false
     scale.value = isPressed.value ? 0.84 : 1.0
-    hoverLabel.value = null
   }
 }
 
@@ -306,20 +285,34 @@ const tick = () => {
   animationFrameId = requestAnimationFrame(tick)
 }
 
-onMounted(() => {
-  if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+const checkDesktop = () => {
+  if (typeof window === 'undefined') return
+  const isWide = window.innerWidth >= 768
+  if (!isWide) {
+    isDesktop.value = false
+    document.documentElement.classList.remove('custom-cursor-active')
+  } else {
     isDesktop.value = true
     document.documentElement.classList.add('custom-cursor-active')
+  }
+}
 
-    window.addEventListener('mousemove', handleMouseMove, { passive: true })
-    window.addEventListener('mousedown', handleMouseDown, { passive: true })
-    window.addEventListener('mouseup', handleMouseUp, { passive: true })
-    window.addEventListener('mouseover', handleMouseOver, { passive: true })
-    document.addEventListener('mouseenter', handleMouseEnter)
-    document.addEventListener('mouseleave', handleMouseLeave)
+onMounted(() => {
+  if (typeof window !== 'undefined') {
+    checkDesktop()
+    window.addEventListener('resize', checkDesktop)
 
-    animationFrameId = requestAnimationFrame(tick)
-    scheduleNextBlink()
+    if (isDesktop.value) {
+      window.addEventListener('mousemove', handleMouseMove, { passive: true })
+      window.addEventListener('mousedown', handleMouseDown, { passive: true })
+      window.addEventListener('mouseup', handleMouseUp, { passive: true })
+      window.addEventListener('mouseover', handleMouseOver, { passive: true })
+      document.addEventListener('mouseenter', handleMouseEnter)
+      document.addEventListener('mouseleave', handleMouseLeave)
+
+      animationFrameId = requestAnimationFrame(tick)
+      scheduleNextBlink()
+    }
   }
 })
 
@@ -334,6 +327,7 @@ onUnmounted(() => {
   if (winkTimeout) clearTimeout(winkTimeout)
 
   if (typeof window !== 'undefined') {
+    window.removeEventListener('resize', checkDesktop)
     window.removeEventListener('mousemove', handleMouseMove)
     window.removeEventListener('mousedown', handleMouseDown)
     window.removeEventListener('mouseup', handleMouseUp)
@@ -345,6 +339,15 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+@media (max-width: 767px) {
+  .custom-cursor-container {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}
+
 .custom-cursor-container {
   will-change: transform, opacity;
 }
