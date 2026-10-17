@@ -3,6 +3,9 @@
     <!-- Subtle Film Grain Overlay -->
     <div class="film-grain pointer-events-none"></div>
 
+    <!-- Custom Letter U Cinema Cursor (Desktop) -->
+    <CustomCursor />
+
     <!-- Floating Mobile Navigation Pill (Mobile only < md) -->
     <MobileNavPill />
 
@@ -94,6 +97,7 @@ import Slide17KoffieArt from '~/components/slides/Slide17KoffieArt.vue'
 import Slide18NeopAgency from '~/components/slides/Slide18NeopAgency.vue'
 import Slide19Contact from '~/components/slides/Slide19Contact.vue'
 import MobileNavPill from '~/components/MobileNavPill.vue'
+import CustomCursor from '~/components/CustomCursor.vue'
 
 let lenisInstance: Lenis | null = null
 
