@@ -22,31 +22,16 @@
       }"
     ></div>
 
-    <!-- Outer Ambient Glow -->
-    <div
-      class="absolute -inset-3 rounded-full bg-ebra-yellow/20 blur-md transition-all duration-300 pointer-events-none"
-      :class="[
-        isPressed ? 'scale-75 bg-ebra-yellow/40' : isHovered ? 'scale-150 bg-ebra-yellow/30' : 'scale-100'
-      ]"
-    ></div>
-
-    <!-- The Animated Ü Character (Eyes + U Body) -->
+    <!-- The Animated Ü Character (Eyes + U Body) - Crisp, No Glow/Haze -->
     <div
       class="relative flex items-center justify-center transition-transform duration-150 ease-out"
       :style="{ transform: `rotate(${rotation}deg) scale(${scale})` }"
     >
       <svg
         viewBox="0 0 44 48"
-        class="w-9 h-10 overflow-visible select-none drop-shadow-[0_0_12px_rgba(251,237,53,0.85)] drop-shadow-[0_3px_6px_rgba(0,0,0,0.9)]"
+        class="w-9 h-10 overflow-visible select-none drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <!-- Defs for filter glow -->
-        <defs>
-          <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-            <feGaussianBlur stdDeviation="1.5" result="blur" />
-            <feComposite in="SourceGraphic" in2="blur" operator="over" />
-          </filter>
-        </defs>
 
         <!-- Eyes (Umlaut Dots with Gaze & Blink Animation) -->
         <g
