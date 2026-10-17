@@ -1,5 +1,5 @@
 <template>
-  <section id="slide-08" class="relative w-full h-[100dvh] md:min-h-screen snap-start snap-always flex items-center justify-center bg-[#050505] overflow-hidden">
+  <section id="slide-08" class="relative w-full h-[100dvh] md:h-auto md:min-h-0 snap-start md:snap-none flex items-center justify-center md:block bg-[#050505] overflow-hidden">
     <!-- Mobile Full-Height Card (< md) -->
     <div class="md:hidden relative w-full h-full flex flex-col justify-between p-6 select-none z-10">
       <img
