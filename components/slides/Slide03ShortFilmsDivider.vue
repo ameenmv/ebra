@@ -1,6 +1,37 @@
 <template>
-  <section id="slide-03" class="relative w-full min-h-screen flex items-center justify-center bg-[#050505] overflow-hidden">
-    <div class="relative w-full max-w-[1920px] 2xl:max-w-[2560px] aspect-[16/9] bg-black overflow-hidden select-none" style="container-type: inline-size;">
+  <section id="slide-03" class="relative w-full h-[100dvh] md:min-h-screen snap-start snap-always flex items-center justify-center bg-[#050505] overflow-hidden">
+    <!-- Mobile Full-Height Card (< md) -->
+    <div class="md:hidden relative w-full h-full flex flex-col justify-between p-6 select-none z-10">
+      <img
+        src="/images/extracted/page-3_1.jpg"
+        alt="Short Films Divider"
+        class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none -z-10 brightness-75"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/90 pointer-events-none -z-10"></div>
+
+      <!-- Top Bar -->
+      <div class="flex items-center justify-between text-ebra-yellow font-clash text-xs tracking-widest uppercase pt-2">
+        <span class="font-light">Portfolio</span>
+        <span class="font-bold">ü</span>
+        <span class="font-light">2026</span>
+      </div>
+
+      <!-- Bottom Category Title -->
+      <div class="pb-20 space-y-2">
+        <div class="text-xs font-mono uppercase tracking-widest text-white/50">
+          Category 01
+        </div>
+        <h2 class="text-ebra-yellow font-clash font-bold text-5xl leading-none uppercase tracking-tight">
+          SHORT FILMS
+        </h2>
+        <p class="text-white/60 font-clash text-xs tracking-wider pt-2">
+          Narrative Direction & Cinematography
+        </p>
+      </div>
+    </div>
+
+    <!-- 16:9 PDF Canvas Frame (Desktop md:) -->
+    <div class="hidden md:block relative w-full max-w-[1920px] 2xl:max-w-[2560px] aspect-[16/9] bg-black overflow-hidden select-none" style="container-type: inline-size;">
       <!-- Raw Background Photo -->
       <img
         src="/images/extracted/page-3_1.jpg"

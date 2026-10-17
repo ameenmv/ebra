@@ -1,6 +1,61 @@
 <template>
-  <section id="slide-07" class="relative w-full min-h-screen flex items-center justify-center bg-[#050505] overflow-hidden">
-    <div class="relative w-full max-w-[1920px] 2xl:max-w-[2560px] aspect-[16/9] bg-black overflow-hidden select-none" style="container-type: inline-size;">
+  <section id="slide-07" class="relative w-full h-[100dvh] md:min-h-screen snap-start snap-always flex items-center justify-center bg-[#050505] overflow-hidden">
+    <!-- Mobile Full-Height Card (< md) -->
+    <div class="md:hidden relative w-full h-full flex flex-col justify-between p-5 select-none z-10 overflow-y-auto">
+      <!-- Top Bar -->
+      <div class="flex items-center justify-between text-ebra-yellow font-clash text-xs tracking-wider border-b border-white/10 pb-2">
+        <span class="font-mono text-white/50 text-[10px] uppercase">07 / Short Film</span>
+        <span class="font-bold">2026 · Drama</span>
+      </div>
+
+      <!-- Center Poster Visual -->
+      <div class="my-auto py-2 flex flex-col items-center">
+        <div class="w-48 aspect-[2/3] rounded-xl overflow-hidden shadow-2xl border border-ebra-yellow/30 relative">
+          <img
+            src="/images/extracted/page-7_1.jpg"
+            alt="Maf'oul Beh Poster"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- Bottom Details & Credits -->
+      <div class="pb-16 space-y-3">
+        <div class="flex items-baseline justify-between">
+          <div>
+            <h2 class="text-2xl font-clash font-bold text-ebra-yellow uppercase tracking-tight">
+              Maf'oul Beh
+            </h2>
+            <div class="text-sm font-arabic font-bold text-ebra-yellow/90">مفعول به</div>
+          </div>
+          <span class="text-xs font-mono text-ebra-yellow/80 bg-ebra-yellow/10 px-2.5 py-1 rounded-full border border-ebra-yellow/30">
+            Ain Film Festival
+          </span>
+        </div>
+
+        <div class="text-xs font-mono text-white/80 space-y-1 bg-white/5 p-3 rounded-xl border border-white/10">
+          <div>Writer & Director: <span class="text-white font-bold">Omar Eid</span></div>
+          <div>DOP: <span class="text-white font-bold">Teka</span></div>
+          <div>Editor & 1st AD: <span class="text-ebra-yellow font-bold">Ebra Mohamed</span></div>
+          <div>Producer: <span class="text-white font-bold">Mohamed Hatem</span></div>
+        </div>
+
+        <a
+          href="https://drive.google.com/file/d/1sM72Y4cE6w5j0oT1vO6z8kG2Qe3tF8g1/view?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full py-3 px-4 rounded-xl bg-ebra-yellow text-black font-clash font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 active:scale-95 transition-transform"
+        >
+          <span>Open Project on Google Drive</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- 16:9 PDF Canvas Frame (Desktop md:) -->
+    <div class="hidden md:block relative w-full max-w-[1920px] 2xl:max-w-[2560px] aspect-[16/9] bg-black overflow-hidden select-none" style="container-type: inline-size;">
       <!-- Center Full-Bleed Poster (Touches top and bottom exactly like PDF) -->
       <div
         class="mafoul-poster absolute overflow-hidden will-change-transform z-10"

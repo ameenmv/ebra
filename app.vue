@@ -1,10 +1,13 @@
 <template>
   <div class="min-h-screen bg-[#050505] text-ebra-yellow relative font-sans selection:bg-ebra-yellow selection:text-black">
     <!-- Subtle Film Grain Overlay -->
-    <div class="film-grain"></div>
+    <div class="film-grain pointer-events-none"></div>
 
-    <!-- Main Continuous 19-Slide Presentation Flow -->
-    <main class="w-full">
+    <!-- Floating Mobile Navigation Pill (Mobile only < md) -->
+    <MobileNavPill />
+
+    <!-- Main 19-Slide Presentation Flow (Snap on Mobile, Continuous Smooth on Desktop) -->
+    <main class="w-full snap-y snap-mandatory h-[100dvh] overflow-y-scroll md:h-auto md:overflow-visible md:snap-none no-scrollbar">
       <!-- 01. Cover Hero -->
       <Slide01Hero @play-showreel="openShowreel" />
 
@@ -54,7 +57,7 @@
       <Slide16Nordway @play-video="openVideoModal" />
 
       <!-- 17. Koffie Art Reels -->
-      <Slide17KoffieArt />
+      <Slide17KoffieArt @play-video="openVideoModal" />
 
       <!-- 18. NEOP Agency Reels -->
       <Slide18NeopAgency @play-video="openVideoModal" />
@@ -62,18 +65,11 @@
       <!-- 19. Drop Me A Line (Contact) -->
       <Slide19Contact />
     </main>
-
-    <!-- In-Site Cinema Video Modal (Vimeo & Google Drive) -->
-    <VideoLightbox
-      :is-open="videoModalOpen"
-      :video="activeVideo"
-      @close="closeVideoModal"
-    />
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, nextTick } from 'vue'
+import { onMounted, onUnmounted, nextTick } from 'vue'
 import Lenis from 'lenis'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -97,35 +93,23 @@ import Slide16Nordway from '~/components/slides/Slide16Nordway.vue'
 import Slide17KoffieArt from '~/components/slides/Slide17KoffieArt.vue'
 import Slide18NeopAgency from '~/components/slides/Slide18NeopAgency.vue'
 import Slide19Contact from '~/components/slides/Slide19Contact.vue'
-import VideoLightbox from '~/components/VideoLightbox.vue'
-
-// Video Lightbox State
-const videoModalOpen = ref(false)
-const activeVideo = ref<any>(null)
+import MobileNavPill from '~/components/MobileNavPill.vue'
 
 let lenisInstance: Lenis | null = null
 
+// Direct External Video Links (Vimeo & Google Drive)
 const openVideoModal = (videoData: any) => {
-  activeVideo.value = videoData
-  videoModalOpen.value = true
-  if (lenisInstance) lenisInstance.stop()
+  const url =
+    videoData?.videoUrl ||
+    (videoData?.vimeoId ? `https://vimeo.com/${videoData.vimeoId}` : null) ||
+    (videoData?.driveId ? `https://drive.google.com/file/d/${videoData.driveId}/view` : null)
+  if (url) {
+    window.open(url, '_blank', 'noopener,noreferrer')
+  }
 }
 
 const openShowreel = () => {
-  openVideoModal({
-    title: 'EBRAHEM MOHAMED — Selected Works / Showreel',
-    subtitle: 'Cinematographer · Director · Editor',
-    scopeOfWork: 'Filmmaker Showcase',
-    videoType: 'vimeo',
-    videoUrl: 'https://vimeo.com/1235152721',
-    vimeoId: '1235152721'
-  })
-}
-
-const closeVideoModal = () => {
-  videoModalOpen.value = false
-  activeVideo.value = null
-  if (lenisInstance) lenisInstance.start()
+  window.open('https://vimeo.com/user218248330?fl=pp&fe=sh', '_blank', 'noopener,noreferrer')
 }
 
 onMounted(async () => {
@@ -134,25 +118,26 @@ onMounted(async () => {
   // 1. Register GSAP ScrollTrigger
   gsap.registerPlugin(ScrollTrigger)
 
-  // 2. Initialize Lenis Smooth Scroll
-  const lenis = new Lenis({
-    duration: 1.25,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    orientation: 'vertical',
-    smoothWheel: true,
-    wheelMultiplier: 1.0,
-    touchMultiplier: 2.0
-  })
-  lenisInstance = lenis
+  // 2. Initialize Lenis Smooth Scroll on desktop screens (>= 768px)
+  if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+    const lenis = new Lenis({
+      duration: 1.25,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      smoothWheel: true,
+      wheelMultiplier: 1.0,
+      touchMultiplier: 2.0
+    })
+    lenisInstance = lenis
 
-  // Synchronize Lenis scroll with GSAP ScrollTrigger
-  lenis.on('scroll', ScrollTrigger.update)
+    lenis.on('scroll', ScrollTrigger.update)
 
-  gsap.ticker.add((time) => {
-    lenis.raf(time * 1000)
-  })
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000)
+    })
 
-  gsap.ticker.lagSmoothing(500, 33)
+    gsap.ticker.lagSmoothing(500, 33)
+  }
 
   // 3. Hero Initial Entrance Animation (Slide 01)
   const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } })

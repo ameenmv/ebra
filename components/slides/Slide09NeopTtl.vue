@@ -1,6 +1,88 @@
 <template>
-  <section id="slide-09" class="relative w-full min-h-screen flex items-center justify-center bg-[#050505] overflow-hidden">
-    <div class="relative w-full max-w-[1920px] 2xl:max-w-[2560px] aspect-[16/9] bg-black overflow-hidden select-none" style="container-type: inline-size;">
+  <section id="slide-09" class="relative w-full h-[100dvh] md:min-h-screen snap-start snap-always flex items-center justify-center bg-[#050505] overflow-hidden">
+    <!-- Mobile Full-Height Card (< md) -->
+    <div class="md:hidden relative w-full h-full flex flex-col justify-between p-5 select-none z-10 overflow-y-auto">
+      <!-- Top Bar -->
+      <div class="flex items-center justify-between text-ebra-yellow font-clash text-xs tracking-wider border-b border-white/10 pb-2">
+        <span class="font-mono text-white/50 text-[10px] uppercase">09 / TTL Campaign</span>
+        <span class="font-bold">2026</span>
+      </div>
+
+      <!-- Main Visual + 3 Stills Gallery -->
+      <div class="space-y-2.5 my-auto py-2">
+        <div
+          class="relative w-full aspect-[16/9] rounded-xl overflow-hidden cursor-pointer group shadow-2xl border border-white/10"
+          @click="$emit('play-video', {
+            title: 'Neop - TTL Campaign · 2026',
+            subtitle: 'Neop Services',
+            scopeOfWork: 'One Man Show',
+            videoType: 'vimeo',
+            vimeoId: '1235158810',
+            videoUrl: 'https://vimeo.com/1235158810'
+          })"
+        >
+          <img
+            src="/images/extracted/page-9_1.jpg"
+            alt="Neop TTL Background"
+            class="w-full h-full object-cover"
+          />
+          <PlayButton />
+        </div>
+
+        <!-- 3 Horizontal Stills Strip -->
+        <div class="flex gap-2 overflow-x-auto pb-1 no-scrollbar">
+          <div class="w-1/3 aspect-[16/9] rounded-lg overflow-hidden border border-white/10 flex-shrink-0">
+            <img src="/images/extracted/page-9_2.jpg" alt="Still 1" class="w-full h-full object-cover" />
+          </div>
+          <div class="w-1/3 aspect-[16/9] rounded-lg overflow-hidden border border-white/10 flex-shrink-0">
+            <img src="/images/extracted/page-9_3.jpg" alt="Still 2" class="w-full h-full object-cover" />
+          </div>
+          <div class="w-1/3 aspect-[16/9] rounded-lg overflow-hidden border border-white/10 flex-shrink-0">
+            <img src="/images/extracted/page-9_4.jpg" alt="Still 3" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Details & External Action Button -->
+      <div class="pb-16 space-y-3">
+        <div class="flex items-baseline justify-between">
+          <h2 class="text-2xl font-clash font-bold text-ebra-yellow uppercase tracking-tight">
+            Neop Services
+          </h2>
+          <span class="text-xs font-mono text-ebra-yellow/70">TTL Campaign</span>
+        </div>
+
+        <p class="text-xs font-light text-white/80 leading-relaxed">
+          Full promotional campaign showcasing Neop creative suite and digital services.
+        </p>
+
+        <div class="flex items-center justify-between text-[11px] font-mono text-ebra-yellow/80 border-t border-white/10 pt-2">
+          <span>Scope of Work:</span>
+          <span class="font-bold text-ebra-yellow">One Man Show (DOP, Dir, Edit)</span>
+        </div>
+
+        <button
+          type="button"
+          @click="$emit('play-video', {
+            title: 'Neop - TTL Campaign · 2026',
+            subtitle: 'Neop Services',
+            scopeOfWork: 'One Man Show',
+            videoType: 'vimeo',
+            vimeoId: '1235158810',
+            videoUrl: 'https://vimeo.com/1235158810'
+          })"
+          class="w-full py-3 px-4 rounded-xl bg-ebra-yellow text-black font-clash font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 active:scale-95 transition-transform"
+        >
+          <span>Watch on Vimeo</span>
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- 16:9 PDF Canvas Frame (Desktop md:) -->
+    <div class="hidden md:block relative w-full max-w-[1920px] 2xl:max-w-[2560px] aspect-[16/9] bg-black overflow-hidden select-none" style="container-type: inline-size;">
       <!-- Full Background Image -->
       <img
         src="/images/extracted/page-9_1.jpg"

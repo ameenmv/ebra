@@ -1,7 +1,56 @@
 <template>
-  <section id="slide-01" class="relative w-full min-h-screen flex items-center justify-center bg-[#050505] overflow-hidden">
-    <!-- 16:9 PDF Canvas Frame -->
-    <div class="relative w-full max-w-[1920px] 2xl:max-w-[2560px] aspect-[16/9] bg-black overflow-hidden select-none" style="container-type: inline-size;">
+  <section id="slide-01" class="relative w-full h-[100dvh] md:min-h-screen snap-start snap-always flex items-center justify-center bg-[#050505] overflow-hidden">
+    <!-- Mobile Full-Height Cinema Card (< md) -->
+    <div class="md:hidden relative w-full h-full flex flex-col justify-between p-6 select-none z-10">
+      <!-- Background Photo with cinematic dark gradient -->
+      <img
+        src="/images/extracted/page-1_1.jpg"
+        alt="EBRA Cover"
+        class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none -z-10 brightness-90"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/90 pointer-events-none -z-10"></div>
+
+      <!-- Top Bar -->
+      <div class="flex items-center justify-between text-ebra-yellow font-clash text-xs tracking-widest uppercase pt-2">
+        <span class="font-light">Portfolio</span>
+        <span class="font-bold tracking-[0.2em]">EBRA</span>
+        <span class="font-light">2026</span>
+      </div>
+
+      <!-- Bottom Content Area -->
+      <div class="pb-16 space-y-4">
+        <!-- Roles -->
+        <div class="flex items-center justify-between text-ebra-yellow font-clash text-xs tracking-wider border-b border-ebra-yellow/20 pb-2">
+          <span>Cinematographer</span>
+          <span class="text-white/40">/</span>
+          <span>Director</span>
+          <span class="text-white/40">/</span>
+          <span>Editor</span>
+        </div>
+
+        <!-- Giant Mobile Title -->
+        <h1 class="text-ebra-yellow font-clash font-bold text-5xl leading-none uppercase tracking-tight">
+          FILMMAKER
+        </h1>
+
+        <!-- Showreel Action Button -->
+        <div class="pt-2">
+          <button
+            type="button"
+            @click="$emit('play-showreel')"
+            class="w-full py-3.5 px-5 rounded-full bg-ebra-yellow text-black font-clash font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(251,237,53,0.3)] active:scale-95 transition-transform"
+          >
+            <span>Watch Showreel</span>
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 16:9 PDF Canvas Frame (Desktop md:) -->
+    <div class="hidden md:block relative w-full max-w-[1920px] 2xl:max-w-[2560px] aspect-[16/9] bg-black overflow-hidden select-none" style="container-type: inline-size;">
       <!-- Raw Background Photo -->
       <img
         src="/images/extracted/page-1_1.jpg"

@@ -16,6 +16,9 @@ export default {
         sans: ['"Clash Grotesk"', 'sans-serif']
       },
       colors: {
+        'ebra-yellow': '#fbed35',
+        'ebra-dark': '#050505',
+        'ebra-surface': '#0a0a0a',
         ebra: {
           yellow: '#fbed35',
           dark: '#050505',
