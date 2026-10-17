@@ -69,7 +69,7 @@
             scopeOfWork: 'Director · Cinematographer · Editor',
             videoType: 'vimeo',
             vimeoId: '1235159889',
-            videoUrl: 'https://vimeo.com/1235159889'
+            videoUrl: 'https://vimeo.com/1235159889?share=copy&fl=sv&fe=ci'
           })"
           class="w-full py-3 px-4 rounded-xl bg-ebra-yellow text-black font-clash font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 active:scale-95 transition-transform"
         >
@@ -110,7 +110,7 @@
           scopeOfWork: 'Director · Cinematographer · Editor',
           videoType: 'vimeo',
           vimeoId: '1235159889',
-          videoUrl: 'https://vimeo.com/1235159889'
+          videoUrl: 'https://vimeo.com/1235159889?share=copy&fl=sv&fe=ci'
         })"
       >
         <img

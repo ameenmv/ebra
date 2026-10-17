@@ -15,12 +15,11 @@
           <div
             class="w-[68vw] max-w-[240px] aspect-[9/16] rounded-2xl overflow-hidden cursor-pointer relative group border border-white/10 flex-shrink-0 snap-center shadow-2xl"
             @click="$emit('play-video', {
-              title: 'Koffie Art — Reel 1',
+              title: 'Koffie Art — Reel 1 (Iced Coffee)',
               subtitle: 'Specialty Coffee & Café',
               scopeOfWork: 'Colorist · Video Editor',
-              videoType: 'vimeo',
-              vimeoId: '1235160201',
-              videoUrl: 'https://vimeo.com/1235160201'
+              videoType: 'instagram',
+              videoUrl: 'https://www.instagram.com/reel/DYXOsG1jDJ4/'
             })"
           >
             <img src="/images/extracted/page-17_2.jpg" alt="Koffie Art Reel 1" class="w-full h-full object-cover" />
@@ -34,12 +33,11 @@
           <div
             class="w-[68vw] max-w-[240px] aspect-[9/16] rounded-2xl overflow-hidden cursor-pointer relative group border border-white/10 flex-shrink-0 snap-center shadow-2xl"
             @click="$emit('play-video', {
-              title: 'Koffie Art — Reel 2',
+              title: 'Koffie Art — Reel 2 (Drawing & Latte)',
               subtitle: 'Specialty Coffee & Café',
               scopeOfWork: 'Colorist · Video Editor',
-              videoType: 'vimeo',
-              vimeoId: '1235160202',
-              videoUrl: 'https://vimeo.com/1235160202'
+              videoType: 'instagram',
+              videoUrl: 'https://www.instagram.com/reel/DUN9aMiDTbA/'
             })"
           >
             <img src="/images/extracted/page-17_1.jpg" alt="Koffie Art Reel 2" class="w-full h-full object-cover" />
@@ -53,12 +51,11 @@
           <div
             class="w-[68vw] max-w-[240px] aspect-[9/16] rounded-2xl overflow-hidden cursor-pointer relative group border border-white/10 flex-shrink-0 snap-center shadow-2xl"
             @click="$emit('play-video', {
-              title: 'Koffie Art — Reel 3',
+              title: 'Koffie Art — Reel 3 (Barista Story)',
               subtitle: 'Specialty Coffee & Café',
               scopeOfWork: 'Colorist · Video Editor',
-              videoType: 'vimeo',
-              vimeoId: '1235160203',
-              videoUrl: 'https://vimeo.com/1235160203'
+              videoType: 'instagram',
+              videoUrl: 'https://www.instagram.com/reel/DblRaLpD6d5/'
             })"
           >
             <img src="/images/extracted/page-17_3.jpg" alt="Koffie Art Reel 3" class="w-full h-full object-cover" />
@@ -132,9 +129,8 @@
           title: 'Koffie Art — Reel 1 (Iced Coffee)',
           subtitle: 'Specialty Coffee & Café',
           scopeOfWork: 'Colorist · Video Editor',
-          videoType: 'vimeo',
-          vimeoId: '1235160201',
-          videoUrl: 'https://vimeo.com/1235160201'
+          videoType: 'instagram',
+          videoUrl: 'https://www.instagram.com/reel/DYXOsG1jDJ4/'
         })"
       >
         <img
@@ -152,9 +148,8 @@
           title: 'Koffie Art — Reel 2 (Drawing & Latte)',
           subtitle: 'Specialty Coffee & Café',
           scopeOfWork: 'Colorist · Video Editor',
-          videoType: 'vimeo',
-          vimeoId: '1235160202',
-          videoUrl: 'https://vimeo.com/1235160202'
+          videoType: 'instagram',
+          videoUrl: 'https://www.instagram.com/reel/DUN9aMiDTbA/'
         })"
       >
         <img
@@ -172,9 +167,8 @@
           title: 'Koffie Art — Reel 3 (Barista Story)',
           subtitle: 'Specialty Coffee & Café',
           scopeOfWork: 'Colorist · Video Editor',
-          videoType: 'vimeo',
-          vimeoId: '1235160203',
-          videoUrl: 'https://vimeo.com/1235160203'
+          videoType: 'instagram',
+          videoUrl: 'https://www.instagram.com/reel/DblRaLpD6d5/'
         })"
       >
         <img

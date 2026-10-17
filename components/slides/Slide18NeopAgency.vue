@@ -19,8 +19,8 @@
               subtitle: 'Marketing & Media Production',
               scopeOfWork: 'Cinematographer · Video Editor',
               videoType: 'vimeo',
-              vimeoId: '1235160301',
-              videoUrl: 'https://vimeo.com/1235160301'
+              vimeoId: '1235181446',
+              videoUrl: 'https://vimeo.com/1235181446?share=copy&fl=sv&fe=ci'
             })"
           >
             <img src="/images/extracted/page-18_3.jpg" alt="NEOP Agency Reel 1" class="w-full h-full object-cover" />
@@ -37,9 +37,8 @@
               title: 'NEOP Agency — Reel 2',
               subtitle: 'Marketing & Media Production',
               scopeOfWork: 'Cinematographer · Video Editor',
-              videoType: 'vimeo',
-              vimeoId: '1235160302',
-              videoUrl: 'https://vimeo.com/1235160302'
+              videoType: 'instagram',
+              videoUrl: 'https://www.instagram.com/reel/DYz44_lo_f0/'
             })"
           >
             <img src="/images/extracted/page-18_1.jpg" alt="NEOP Agency Reel 2" class="w-full h-full object-cover" />
@@ -56,9 +55,8 @@
               title: 'NEOP Agency — Reel 3',
               subtitle: 'Marketing & Media Production',
               scopeOfWork: 'Cinematographer · Video Editor',
-              videoType: 'vimeo',
-              vimeoId: '1235160303',
-              videoUrl: 'https://vimeo.com/1235160303'
+              videoType: 'instagram',
+              videoUrl: 'https://www.instagram.com/reel/DXmP1UciHEs/'
             })"
           >
             <img src="/images/extracted/page-18_2.jpg" alt="NEOP Agency Reel 3" class="w-full h-full object-cover" />
@@ -133,8 +131,8 @@
           subtitle: 'Marketing & Media Production',
           scopeOfWork: 'Cinematographer · Video Editor',
           videoType: 'vimeo',
-          vimeoId: '1235160301',
-          videoUrl: 'https://vimeo.com/1235160301'
+          vimeoId: '1235181446',
+          videoUrl: 'https://vimeo.com/1235181446?share=copy&fl=sv&fe=ci'
         })"
       >
         <img
@@ -152,9 +150,8 @@
           title: 'NEOP Agency — Reel 2 (Actor Interview)',
           subtitle: 'Marketing & Media Production',
           scopeOfWork: 'Cinematographer · Video Editor',
-          videoType: 'vimeo',
-          vimeoId: '1235160302',
-          videoUrl: 'https://vimeo.com/1235160302'
+          videoType: 'instagram',
+          videoUrl: 'https://www.instagram.com/reel/DYz44_lo_f0/'
         })"
       >
         <img
@@ -172,9 +169,8 @@
           title: 'NEOP Agency — Reel 3 (Package Unboxing)',
           subtitle: 'Marketing & Media Production',
           scopeOfWork: 'Cinematographer · Video Editor',
-          videoType: 'vimeo',
-          vimeoId: '1235160303',
-          videoUrl: 'https://vimeo.com/1235160303'
+          videoType: 'instagram',
+          videoUrl: 'https://www.instagram.com/reel/DXmP1UciHEs/'
         })"
       >
         <img

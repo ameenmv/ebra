@@ -18,9 +18,8 @@
               title: 'NORDWAY — Reel 1',
               subtitle: 'Specialty Coffee Roastery',
               scopeOfWork: 'Colorist · Video Editor',
-              videoType: 'vimeo',
-              vimeoId: '1235160101',
-              videoUrl: 'https://vimeo.com/1235160101'
+              videoType: 'instagram',
+              videoUrl: 'https://www.instagram.com/reel/DYE7p3pItTS/'
             })"
           >
             <img src="/images/extracted/page-16_3.jpg" alt="Nordway Reel 1" class="w-full h-full object-cover" />
@@ -37,9 +36,8 @@
               title: 'NORDWAY — Reel 2',
               subtitle: 'Specialty Coffee Roastery',
               scopeOfWork: 'Colorist · Video Editor',
-              videoType: 'vimeo',
-              vimeoId: '1235160102',
-              videoUrl: 'https://vimeo.com/1235160102'
+              videoType: 'instagram',
+              videoUrl: 'https://www.instagram.com/reel/DcbRUxPCIOH/'
             })"
           >
             <img src="/images/extracted/page-16_2.jpg" alt="Nordway Reel 2" class="w-full h-full object-cover" />
@@ -56,9 +54,9 @@
               title: 'NORDWAY — Reel 3',
               subtitle: 'Specialty Coffee Roastery',
               scopeOfWork: 'Colorist · Video Editor',
-              videoType: 'vimeo',
-              vimeoId: '1235160103',
-              videoUrl: 'https://vimeo.com/1235160103'
+              videoType: 'drive',
+              driveId: '1sWyMp1yEJCmRHt4f-v5SUs-8zmsOKo8m',
+              videoUrl: 'https://drive.google.com/file/d/1sWyMp1yEJCmRHt4f-v5SUs-8zmsOKo8m/view?usp=drive_link'
             })"
           >
             <img src="/images/extracted/page-16_1.jpg" alt="Nordway Reel 3" class="w-full h-full object-cover" />
@@ -132,9 +130,8 @@
           title: 'NORDWAY — Reel 1',
           subtitle: 'Specialty Coffee Roastery',
           scopeOfWork: 'Colorist · Video Editor',
-          videoType: 'vimeo',
-          vimeoId: '1235160101',
-          videoUrl: 'https://vimeo.com/1235160101'
+          videoType: 'instagram',
+          videoUrl: 'https://www.instagram.com/reel/DYE7p3pItTS/'
         })"
       >
         <img
@@ -152,9 +149,8 @@
           title: 'NORDWAY — Reel 2 (Roaster Story)',
           subtitle: 'Specialty Coffee Roastery',
           scopeOfWork: 'Colorist · Video Editor',
-          videoType: 'vimeo',
-          vimeoId: '1235160102',
-          videoUrl: 'https://vimeo.com/1235160102'
+          videoType: 'instagram',
+          videoUrl: 'https://www.instagram.com/reel/DcbRUxPCIOH/'
         })"
       >
         <img
@@ -172,9 +168,9 @@
           title: 'NORDWAY — Reel 3 (Roasting Process)',
           subtitle: 'Specialty Coffee Roastery',
           scopeOfWork: 'Colorist · Video Editor',
-          videoType: 'vimeo',
-          vimeoId: '1235160103',
-          videoUrl: 'https://vimeo.com/1235160103'
+          videoType: 'drive',
+          driveId: '1sWyMp1yEJCmRHt4f-v5SUs-8zmsOKo8m',
+          videoUrl: 'https://drive.google.com/file/d/1sWyMp1yEJCmRHt4f-v5SUs-8zmsOKo8m/view?usp=drive_link'
         })"
       >
         <img

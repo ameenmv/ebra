@@ -71,8 +71,8 @@
             subtitle: 'Short Film · 2022',
             scopeOfWork: 'Cinematographer',
             videoType: 'drive',
-            driveId: '1YFq71J0B20k_q4R9aNkJ3eNl6oM4wN7A',
-            videoUrl: 'https://drive.google.com/file/d/1YFq71J0B20k_q4R9aNkJ3eNl6oM4wN7A/view?usp=drive_link'
+            driveId: '12RL6XWfeqc6FtPhM2f-O6x_M4nGBH-k_',
+            videoUrl: 'https://drive.google.com/file/d/12RL6XWfeqc6FtPhM2f-O6x_M4nGBH-k_/view'
           })"
           class="w-full py-3 px-4 rounded-xl bg-ebra-yellow text-black font-clash font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 active:scale-95 transition-transform"
         >
@@ -112,8 +112,8 @@
           subtitle: 'Short Film · 2022',
           scopeOfWork: 'Cinematographer',
           videoType: 'drive',
-          driveId: '1YFq71J0B20k_q4R9aNkJ3eNl6oM4wN7A',
-          videoUrl: 'https://drive.google.com/file/d/1YFq71J0B20k_q4R9aNkJ3eNl6oM4wN7A/view?usp=drive_link'
+          driveId: '12RL6XWfeqc6FtPhM2f-O6x_M4nGBH-k_',
+          videoUrl: 'https://drive.google.com/file/d/12RL6XWfeqc6FtPhM2f-O6x_M4nGBH-k_/view'
         })"
       >
         <img

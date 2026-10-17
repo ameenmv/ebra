@@ -50,7 +50,11 @@
     </div>
 
     <!-- 16:9 PDF Canvas Frame (Desktop md:) -->
-    <div class="hidden md:block relative w-full max-w-[1920px] 2xl:max-w-[2560px] aspect-[16/9] bg-black overflow-hidden select-none" style="container-type: inline-size;">
+    <div
+      class="hidden md:block relative w-full max-w-[1920px] 2xl:max-w-[2560px] aspect-[16/9] bg-black overflow-hidden select-none cursor-pointer group"
+      style="container-type: inline-size;"
+      @click="$emit('play-showreel')"
+    >
       <!-- Raw Background Photo -->
       <img
         src="/images/extracted/page-1_1.jpg"

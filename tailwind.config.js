@@ -11,9 +11,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        clash: ['"Clash Grotesk"', 'sans-serif'],
+        clash: ['"Clash Grotesk"', '"IBM Plex Sans Arabic"', 'sans-serif'],
         arabic: ['"IBM Plex Sans Arabic"', 'sans-serif'],
-        sans: ['"Clash Grotesk"', 'sans-serif']
+        sans: ['"Clash Grotesk"', '"IBM Plex Sans Arabic"', 'sans-serif'],
+        display: ['"Clash Grotesk"', '"IBM Plex Sans Arabic"', 'sans-serif']
       },
       colors: {
         'ebra-yellow': '#fbed35',

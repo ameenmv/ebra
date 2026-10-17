@@ -108,26 +108,54 @@
         E
       </div>
 
-      <!-- Smiling Face Emoji (ü) overlaid directly on the man's scarf -->
-      <svg
-        class="absolute pointer-events-none z-20"
-        style="left: 60.5%; top: 49.5%; width: 14.5cqw; height: 41.5cqw;"
-        viewBox="0 0 100 240"
-        fill="none"
+      <!-- Giant Animated Ü Mascot (Exact proportions and position matching user's sketch) -->
+      <div
+        class="contact-u absolute z-20 will-change-transform select-none cursor-pointer"
+        style="left: 59.28%; top: 50.17%; width: 14.75cqw; aspect-ratio: 185 / 256;"
+        @click="triggerBigBlink"
+        @mouseenter="triggerBigWink"
       >
-        <!-- Left eye -->
-        <circle cx="14" cy="18" r="10" fill="#fbed35" />
-        <!-- Right eye -->
-        <circle cx="86" cy="18" r="10" fill="#fbed35" />
-        <!-- Smile curve -->
-        <path
-          d="M 14 55 L 14 140 C 14 215 86 215 86 140 L 86 55"
-          stroke="#fbed35"
-          stroke-width="14"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
+        <svg
+          viewBox="0 0 185 256"
+          class="w-full h-full overflow-visible drop-shadow-[0_0_20px_rgba(251,237,53,0.75)] drop-shadow-[0_4px_10px_rgba(0,0,0,0.9)]"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <!-- Left Eye Dot (Over man's cheek / winked side) -->
+          <g
+            class="transition-transform duration-75 ease-out"
+            :class="{ 'scale-y-[0.08]': isLeftClosed }"
+            style="transform-origin: 31px 35px;"
+          >
+            <circle cx="31" cy="35" r="16" fill="#fbed35" />
+            <!-- Inner white glint -->
+            <circle v-if="!isLeftClosed" cx="26" cy="30" r="4.5" fill="#ffffff" opacity="0.85" />
+          </g>
+
+          <!-- Right Eye Dot (Over man's open eye side) -->
+          <g
+            class="transition-transform duration-75 ease-out"
+            :class="{ 'scale-y-[0.08]': isRightClosed }"
+            style="transform-origin: 149px 26px;"
+          >
+            <circle cx="149" cy="26" r="15" fill="#fbed35" />
+            <!-- Inner white glint -->
+            <circle v-if="!isRightClosed" cx="144" cy="21" r="4.5" fill="#ffffff" opacity="0.85" />
+          </g>
+
+          <!-- The "U" Mouth / Scarf Curve -->
+          <path
+            d="M 32 80 L 32 185 C 32 265, 152 265, 152 185 L 152 68"
+            stroke="#fbed35"
+            stroke-width="19"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="transition-transform duration-100"
+            :class="{ 'scale-[1.04_0.94]': isLeftClosed && isRightClosed }"
+            style="transform-origin: 92px 185px;"
+          />
+        </svg>
+      </div>
 
       <!-- Left Group: DROP ME A LINE & Contacts (Direct canvas absolute coordinates) -->
       <div class="contact-links absolute inset-0 pointer-events-none text-ebra-yellow font-clash z-20 will-change-transform">
@@ -165,16 +193,149 @@
         class="contact-socials absolute text-ebra-yellow font-clash font-light tracking-wide z-20 flex items-center gap-[3.5cqw]"
         style="left: 5.21%; top: 88.70%; font-size: 1.04cqw;"
       >
-        <a href="https://vimeo.com" target="_blank" rel="noopener" class="hover:underline">
+        <a href="https://vimeo.com/user218248330?fl=pp&fe=sh" target="_blank" rel="noopener noreferrer" class="hover:underline">
           Vimeo
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener" class="hover:underline">
+        <a href="https://www.instagram.com/ebra__u/" target="_blank" rel="noopener noreferrer" class="hover:underline">
           Instagram
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener" class="hover:underline">
+        <a href="https://wa.link/2696vh" target="_blank" rel="noopener noreferrer" class="hover:underline">
+          WhatsApp
+        </a>
+        <a href="https://www.linkedin.com/in/ebrahim-mohamed-16b313304" target="_blank" rel="noopener noreferrer" class="hover:underline">
           Linkedin
         </a>
       </div>
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const isLeftClosed = ref(false)
+const isRightClosed = ref(false)
+const isUserInteracting = ref(false)
+
+let isLoopActive = true
+let currentSleepTimer: ReturnType<typeof setTimeout> | null = null
+
+const sleep = (ms: number) =>
+  new Promise((resolve) => {
+    currentSleepTimer = setTimeout(resolve, ms)
+  })
+
+// Click on the mascot closes both eyes with a bounce
+const triggerBigBlink = () => {
+  isLeftClosed.value = true
+  isRightClosed.value = true
+  setTimeout(() => {
+    if (!isUserInteracting.value) {
+      isLeftClosed.value = false
+      isRightClosed.value = false
+    }
+  }, 140)
+}
+
+// Hover on the mascot triggers a friendly wink
+const triggerBigWink = () => {
+  isRightClosed.value = true
+  setTimeout(() => {
+    if (!isUserInteracting.value) {
+      isRightClosed.value = false
+    }
+  }, 220)
+}
+
+// Global click on slide closes eyes while mouse is held
+const handleGlobalMouseDown = () => {
+  isUserInteracting.value = true
+  isLeftClosed.value = true
+  isRightClosed.value = true
+}
+
+const handleGlobalMouseUp = () => {
+  isUserInteracting.value = false
+  isLeftClosed.value = false
+  isRightClosed.value = false
+}
+
+// Continuous lively animation loop (Snappy cadence ~1s pauses)
+const runContinuousAnimationLoop = async () => {
+  while (isLoopActive) {
+    // 1. Playful Wink (Right eye winks, holding for 240ms)
+    await sleep(1000 + Math.random() * 400)
+    if (!isLoopActive) break
+    if (!isUserInteracting.value) {
+      isRightClosed.value = true
+      await sleep(240)
+      if (!isUserInteracting.value) isRightClosed.value = false
+    }
+
+    // 2. Short Pause
+    await sleep(900 + Math.random() * 300)
+    if (!isLoopActive) break
+
+    // 3. Natural Quick Blink (Both eyes)
+    if (!isUserInteracting.value) {
+      isLeftClosed.value = true
+      isRightClosed.value = true
+      await sleep(110)
+      if (!isUserInteracting.value) {
+        isLeftClosed.value = false
+        isRightClosed.value = false
+      }
+    }
+
+    // 4. Short Pause
+    await sleep(1100 + Math.random() * 400)
+    if (!isLoopActive) break
+
+    // 5. Alternate Wink (Left eye winks, matching photo)
+    if (!isUserInteracting.value) {
+      isLeftClosed.value = true
+      await sleep(240)
+      if (!isUserInteracting.value) isLeftClosed.value = false
+    }
+
+    // 6. Short Pause
+    await sleep(900 + Math.random() * 300)
+    if (!isLoopActive) break
+
+    // 7. Lively Double-Blink (Quick double-tap blink)
+    if (!isUserInteracting.value) {
+      isLeftClosed.value = true
+      isRightClosed.value = true
+      await sleep(85)
+      isLeftClosed.value = false
+      isRightClosed.value = false
+      await sleep(75)
+      isLeftClosed.value = true
+      isRightClosed.value = true
+      await sleep(85)
+      if (!isUserInteracting.value) {
+        isLeftClosed.value = false
+        isRightClosed.value = false
+      }
+    }
+  }
+}
+
+onMounted(() => {
+  if (typeof window !== 'undefined') {
+    window.addEventListener('mousedown', handleGlobalMouseDown)
+    window.addEventListener('mouseup', handleGlobalMouseUp)
+    isLoopActive = true
+    runContinuousAnimationLoop()
+  }
+})
+
+onUnmounted(() => {
+  isLoopActive = false
+  if (typeof window !== 'undefined') {
+    window.removeEventListener('mousedown', handleGlobalMouseDown)
+    window.removeEventListener('mouseup', handleGlobalMouseUp)
+  }
+  if (currentSleepTimer) clearTimeout(currentSleepTimer)
+})
+</script>

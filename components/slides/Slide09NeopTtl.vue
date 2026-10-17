@@ -68,8 +68,8 @@
             subtitle: 'Neop Services',
             scopeOfWork: 'One Man Show',
             videoType: 'vimeo',
-            vimeoId: '1235158810',
-            videoUrl: 'https://vimeo.com/1235158810'
+            vimeoId: '1235152721',
+            videoUrl: 'https://vimeo.com/1235152721?share=copy&fl=sv&fe=ci'
           })"
           class="w-full py-3 px-4 rounded-xl bg-ebra-yellow text-black font-clash font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 active:scale-95 transition-transform"
         >
@@ -98,8 +98,8 @@
           subtitle: 'Neop Services',
           scopeOfWork: 'One Man Show',
           videoType: 'vimeo',
-          vimeoId: '1235158810',
-          videoUrl: 'https://vimeo.com/1235158810'
+          vimeoId: '1235152721',
+          videoUrl: 'https://vimeo.com/1235152721?share=copy&fl=sv&fe=ci'
         })"
       >
         <PlayButton />

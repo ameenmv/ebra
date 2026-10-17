@@ -67,15 +67,15 @@
             title: 'Azrak - Internship Campaign · 2024',
             subtitle: 'Social Media Campaign',
             scopeOfWork: 'Director',
-            videoType: 'drive',
-            driveId: '1p4M9GgCsmgq15H6K_7e05_Yk-j6KxP8a',
-            videoUrl: 'https://drive.google.com/file/d/1p4M9GgCsmgq15H6K_7e05_Yk-j6KxP8a/view?usp=drive_link'
+            videoType: 'vimeo',
+            vimeoId: '1234679170',
+            videoUrl: 'https://vimeo.com/1234679170?share=copy&fl=sv&fe=ci'
           })"
           class="w-full py-3 px-4 rounded-xl bg-ebra-yellow text-black font-clash font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 active:scale-95 transition-transform"
         >
-          <span>Open in Google Drive</span>
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          <span>Watch on Vimeo</span>
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z" />
           </svg>
         </button>
       </div>
@@ -97,9 +97,9 @@
           title: 'Azrak - Internship Campaign · 2024',
           subtitle: 'Social Media Campaign',
           scopeOfWork: 'Director',
-          videoType: 'drive',
-          driveId: '1p4M9GgCsmgq15H6K_7e05_Yk-j6KxP8a',
-          videoUrl: 'https://drive.google.com/file/d/1p4M9GgCsmgq15H6K_7e05_Yk-j6KxP8a/view?usp=drive_link'
+          videoType: 'vimeo',
+          vimeoId: '1234679170',
+          videoUrl: 'https://vimeo.com/1234679170?share=copy&fl=sv&fe=ci'
         })"
       >
         <PlayButton />

@@ -68,8 +68,8 @@
             subtitle: 'Mini Documentary',
             scopeOfWork: 'Director · Cinematographer · Editor',
             videoType: 'drive',
-            driveId: '1f8hT4g_K3m1Q7e8a9B_2s6r5tY4uV3wX',
-            videoUrl: 'https://drive.google.com/file/d/1f8hT4g_K3m1Q7e8a9B_2s6r5tY4uV3wX/view?usp=drive_link'
+            driveId: '1jbg4wwTaC-jgtc4aoQHj27__7qFC-nEx',
+            videoUrl: 'https://drive.google.com/file/d/1jbg4wwTaC-jgtc4aoQHj27__7qFC-nEx/view?usp=drive_link'
           })"
           class="w-full py-3 px-4 rounded-xl bg-ebra-yellow text-black font-clash font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 active:scale-95 transition-transform"
         >
@@ -109,8 +109,8 @@
           subtitle: 'Mini Documentary',
           scopeOfWork: 'Director · Cinematographer · Editor',
           videoType: 'drive',
-          driveId: '1f8hT4g_K3m1Q7e8a9B_2s6r5tY4uV3wX',
-          videoUrl: 'https://drive.google.com/file/d/1f8hT4g_K3m1Q7e8a9B_2s6r5tY4uV3wX/view?usp=drive_link'
+          driveId: '1jbg4wwTaC-jgtc4aoQHj27__7qFC-nEx',
+          videoUrl: 'https://drive.google.com/file/d/1jbg4wwTaC-jgtc4aoQHj27__7qFC-nEx/view?usp=drive_link'
         })"
       >
         <img

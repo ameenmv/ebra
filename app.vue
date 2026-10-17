@@ -422,6 +422,18 @@ onMounted(async () => {
       }
     })
 
+    gsap.from('#slide-19 .contact-u', {
+      scale: 0.75,
+      opacity: 0,
+      duration: 1.3,
+      delay: 0.25,
+      ease: 'back.out(1.8)',
+      scrollTrigger: {
+        trigger: s19,
+        start: 'top 70%'
+      }
+    })
+
     gsap.from('#slide-19 .contact-links', {
       y: 40,
       opacity: 0,
